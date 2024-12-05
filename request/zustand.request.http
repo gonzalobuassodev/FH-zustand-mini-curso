@@ -1,0 +1,5 @@
+@url = https://zustand-storage-3b115-default-rtdb.europe-west1.firebasedatabase.app/person.json
+
+##! Get
+
+GET {{url}}
