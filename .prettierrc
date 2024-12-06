@@ -6,8 +6,9 @@
   "trailingComma": "all",
   "arrowParens": "always",
   "bracketSpacing": true,
-  "jsxBracketSameLine": false,
-  "jsxSingleQuote": false,
+  "jsxBracketSameLine": true,
+  "jsxSingleQuote": true,
   "printWidth": 80,
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "htmlWhitespaceSensitivity": "css"
 }
