@@ -4,3 +4,4 @@ export * from './person/person.store';
 export * from './storages/firebase.storage';
 export * from './storages/session.storage';
 export * from './tasks/task.store';
+export * from './wedding/person.slice';
