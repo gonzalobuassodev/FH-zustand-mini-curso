@@ -1,0 +1,36 @@
+@url = http://localhost:3000/api
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImU0NTBhZGRhLWJkYzktNDk2Zi1iYjY0LWM5OWVkMWZlYzNmNiIsImlhdCI6MTczMzczOTgyMiwiZXhwIjoxNzMzNzQ3MDIyfQ.0hQ0q1JIpsi0LHfTM-VbuDFPZxCKQcvu-_Q-GDd2CFI
+
+##! POST
+POST {{url}}/auth/login
+Content-Type: application/json
+
+{
+    "email": "test2@google.com",
+    "password": "Abc123"
+}
+
+###
+##! Create
+POST {{url}}/auth/register
+Content-Type: application/json
+
+{
+    "email": "test2@google.com",
+    "password": "Abc123",
+    "fullName": "Test User" 
+}
+
+###!
+
+GET {{url}}/auth/check-status
+Content-Type: application/json
+
+Authorization: Bearer {{token}}
+
+###! 
+
+GET {{url}}/auth/private
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
